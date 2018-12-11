@@ -29,7 +29,10 @@
     max-width: 430px;
     margin-top: 70px;
     > h1 {
-      font-size: 24px;
+      font-size: 28px;
+    }
+    > div {
+      line-height: 1.1;
     }
     &-subscribe {
       display: inline-block;
