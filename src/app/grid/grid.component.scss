@@ -1,0 +1,23 @@
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.grid {
+  margin-top: 25px;
+  &-container {
+    margin-top: 10px;
+  }
+  &-items {
+    padding: 0 0 0 10px;
+    &__name {
+      display: block;
+    }
+    &__price {
+      color: tomato;
+      font-weight: 600;
+    }
+  }
+}

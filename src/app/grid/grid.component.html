@@ -1,3 +1,38 @@
-<p>
-  grid works!
-</p>
+<section class="grid container">
+  <div>
+      <input type="text" class="form-control" placeholder="Search" [(ngModel)]="search">
+      <!-- add sorting by new items -->
+  </div>
+
+  <div class="row">
+    <div class="grid-container col-lg-4 col-md-6 col-sm-6 col-xs-12" *ngFor="let item of items | filter:search">
+
+        <ng-template #content let-modal>
+            <div class="modal-header">
+              <b style="margin-right: 5px;">Name:</b>
+              <span class="modal-title">{{ item.name }}</span>
+              <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <b>Description: </b>
+              <span>{{ item.desc }}</span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" (click)="modal.close('Close click')">Close</button>
+            </div>
+          </ng-template>
+
+      <button (click)="open(content)">
+        <img [src]="item.img">
+      </button>
+      <div class="grid-items">
+        <span class="grid-items__name">{{ item.name }}</span>
+        <span class="grid-items__price">{{ item.price }}</span>
+    </div>
+
+    </div>
+
+  </div>
+</section>
