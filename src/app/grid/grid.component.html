@@ -37,7 +37,11 @@
     </div>
     </div>
     <section class="pagination">
-        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+        <pagination-controls
+            (pageChange)="p = $event"
+            previousLabel=""
+            nextLabel=""
+        ></pagination-controls>
     </section>
   </div>
 </section>
