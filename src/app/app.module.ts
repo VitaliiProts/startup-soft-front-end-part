@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { GridComponent } from './grid/grid.component';
 import { FilterPipe } from './filter.pipe';
-import {NgxPaginationModule} from 'ngx-pagination';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
