@@ -10,6 +10,7 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
 export class GridComponent implements OnInit {
   closeResult: string;
+  p: number = 1;
   items = [
     {
       name: 'skadfhksdhkf',
@@ -43,6 +44,30 @@ export class GridComponent implements OnInit {
     },
     {
       name: 'slkgjlkjhkl',
+      img: 'http://fakeimg.pl/325x325/',
+      price: '$ 450',
+      desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, itaque.'
+    },
+    {
+      name: 'wrgrdg',
+      img: 'http://fakeimg.pl/325x325/',
+      price: '$ 450',
+      desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, itaque.'
+    },
+    {
+      name: 'rsggedg',
+      img: 'http://fakeimg.pl/325x325/',
+      price: '$ 450',
+      desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, itaque.'
+    },
+    {
+      name: 'dhyery',
+      img: 'http://fakeimg.pl/325x325/',
+      price: '$ 450',
+      desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, itaque.'
+    },
+    {
+      name: 'slkgjlksfdbhgnjhkl',
       img: 'http://fakeimg.pl/325x325/',
       price: '$ 450',
       desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, itaque.'

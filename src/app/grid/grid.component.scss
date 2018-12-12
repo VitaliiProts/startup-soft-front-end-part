@@ -9,6 +9,7 @@ button {
   margin-top: 25px;
   &-container {
     margin-top: 10px;
+    height: 800px;
   }
   &-items {
     padding: 0 0 0 10px;
@@ -20,4 +21,10 @@ button {
       font-weight: 600;
     }
   }
+}
+
+.pagination {
+  display: block;
+  width: 100%;
+  text-align: center;
 }
